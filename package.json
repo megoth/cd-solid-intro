@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build:html",
-    "build:css": "sass src/css/reveal.scss ./index.css",
-    "build:html": "rm -f ./index.html && pug src/index.pug -P -o ./",
+    "build:css": "sass src/css/reveal.scss dist/index.css",
+    "build:html": "rm -f dist/index.html && pug src/index.pug -P -o dist",
     "build:js": "webpack --config webpack.config.js",
-    "start": "live-server",
-    "watch:html": "pug src/index.pug -wP -o ./",
+    "start": "npm run build && live-server dist",
+    "watch:html": "pug src/index.pug -wP -o dist",
     "watch:js": "webpack -w --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

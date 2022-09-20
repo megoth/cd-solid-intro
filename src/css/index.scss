@@ -1661,8 +1661,8 @@ body {
  */
 @font-face {
   font-family: 'League Gothic';
-  src: url("./assets/league-gothic-webfont.eot");
-  src: url("./assets/league-gothic-webfont.eot") format("embedded-opentype"), url("./assets/league-gothic-webfont.woff") format("woff"), url("./assets/league-gothic-webfont.ttf") format("truetype"), url("./assets/league-gothic-webfont.svg") format("svg");
+  src: url("../../dist/assets/league-gothic-webfont.eot");
+  src: url("../../dist/assets/league-gothic-webfont.eot") format("embedded-opentype"), url("../../dist/assets/league-gothic-webfont.woff") format("woff"), url("../../dist/assets/league-gothic-webfont.ttf") format("truetype"), url("../../dist/assets/league-gothic-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
