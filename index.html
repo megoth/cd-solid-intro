@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Introduction to Solid - Cappelen Damm utviklingsgruppe, 22. september 2022</title>
+    <meta name="description" content="A presentation of Solid, presented at Cappelen Damm utviklingsgruppe, September 22, 2022">
+    <meta name="author" content="Arne Hassel">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="start">
+          <h1>Introduction to Solid</h1>
+          <p>By Arne Hassel</p>
+        </section>
+        <section id="agenda">
+          <h2>Agenda</h2>
+        </section>
+        <section id="about-me">
+          <h2>About me</h2>
+          <ul>
+            <li class="fragment"><a href="https://inrupt.com/">Inrupt</a></li>
+            <li class="fragment"><a href="https://solidproject.org/">Solid</a></li>
+            <li class="fragment"><a href="https://www.w3.org/standards/semanticweb/data">Linked Data</a></li>
+          </ul>
+        </section>
+        <section id="solid-10000-ft">
+          <h2>Solid from 10.000 ft</h2>
+          <blockquote>Solid is a&nbsp;<a href="https://solidproject.org/TR/">specification</a> that lets people store their data securely in decentralized data stores called Pods.
+            Pods are like secure personal web servers for data. When data is stored in someone's Pod,
+            they control which people and applications can access it.
+          </blockquote>
+          <ul>
+            <li class="fragment">several "sub"-specifications</li>
+            <li class="fragment">Started by&nbsp;<a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a></li>
+            <li class="fragment">Social Linked Data - SoLiD (not used anymore)</li>
+          </ul>
+        </section>
+        <section id="solid-org">
+          <h2>Organization</h2>
+          <ul>
+            <li class="fragment">No single organization</li>
+            <li class="fragment">Panels (e.g.&nbsp;<a href="https://www.w3.org/community/solid/wiki/Authentication_Panel">authentication</a>,&nbsp;<a href="https://www.w3.org/community/solid/wiki/Authorization_Panel">authorization</a>,&nbsp;<a href="https://www.w3.org/community/solid/wiki/Interoperability_Panel">interoperability</a>)</li>
+            <li class="fragment">Other&nbsp;<a href="https://solidproject.org/contributing">volunteers</a></li>
+            <li class="fragment">Utviklere og organisasjoner</li>
+            <li class="fragment">Andre interesserte</li>
+          </ul>
+        </section>
+        <section id="solid-not">
+          <h2>What Solid isn't</h2>
+          <ul>
+            <li class="fragment">Blockchain</li>
+            <li class="fragment">SOLID principles</li>
+            <li class="fragment">solid.js</li>
+          </ul>
+        </section>
+        <section id="solid-basic-rdf">
+          <h2>Solid basics</h2>
+          <ul>
+            <li class="fragment">RDF (<a href="https://www.w3.org/TR/rdf11-concepts/">Specification</a>,&nbsp;<a href="https://www.w3.org/TR/rdf-primer/">Primer</a>)</li>
+            <li class="fragment">Triples<img src="./assets/rdf-graph.svg" style="margin: 0 1em;"></li>
+            <li class="fragment">Graphs (e.g.&nbsp;<a href="https://id.inrupt.com/megoth">https://id.inrupt.com/megoth</a>)</li>
+            <li class="fragment">Vocabularies/Ontologies (e.g.&nbsp;<a href="https://schema.org/">schema.org</a>)</li>
+            <li class="fragment">Queries (i.e.&nbsp;<a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL</a>)</li>
+            <li class="fragment">Shapes (<a href="http://shex.io/">ShEx</a>,&nbsp;<a href="https://www.w3.org/TR/shacl/">SHACL</a>,&nbsp;<a href="https://shaperepo.com/">ShapeRepo</a>)</li>
+          </ul>
+        </section>
+        <section id="solid-implementations">
+          <h2>Solid implementations</h2>
+          <ul>
+            <li class="fragment">Server implementations (<a href="https://inrupt.com/products/enterprise-solid-server/">ESS</a>,&nbsp;<a href="https://github.com/CommunitySolidServer/CommunitySolidServer">CSS</a>,&nbsp;<a href="https://github.com/nodeSolidServer/node-solid-server">NSS</a>)</li>
+            <li class="fragment">Client-side implementations (<a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">Inrupt</a>,&nbsp;<a href="https://github.com/linkeddata/rdflib.js/">rdflib.js</a>,&nbsp;<a href="https://www.npmjs.com/package/ldo">LDO</a>)</li>
+            <li class="fragment"><a href="https://solidproject.org/developers/tools/">List of tools</a></li>
+          </ul>
+        </section>
+        <section id="pros-cons-developers">
+          <h2>Pros & Cons - Developers</h2>
+          <ul style="list-style: none;">
+            <li class="fragment">+ Reusable and extensible data</li>
+            <li class="fragment">+ GDPR-compliant</li>
+            <li class="fragment">+ Good combo w/headless apps</li>
+            <li class="fragment">- Complicated</li>
+            <li class="fragment">- Specifications under development</li>
+            <li class="fragment">- No significant network effect (yet)</li>
+          </ul>
+        </section>
+        <section id="pros-cons-users">
+          <h2>Pros & Cons - Users</h2>
+          <ul style="list-style: none;">
+            <li class="fragment">+ No lock-in</li>
+            <li class="fragment">+ Reusable data</li>
+            <li class="fragment">+ Allows full control of data</li>
+            <li class="fragment">- Few apps</li>
+            <li class="fragment">- Challenging UX</li>
+          </ul>
+        </section>
+        <section id="links">
+          <h2>More links</h2>
+          <ul>
+            <li class="fragment"><a href="https://forum.solidproject.org/">Forum</a></li>
+            <li class="fragment"><a href="https://gitter.im/solid/chat">Gitter chat</a></li>
+            <li class="fragment"><a href="https://solidproject.org/events">Solid World</a></li>
+            <li class="fragment"><a href="https://solidproject.org/apps">Apps</a>
+              <ul>
+                <li class="fragment"><a href="https://podbrowser.inrupt.com">Inrupt PodBrowser</a></li>
+                <li class="fragment"><a href="https://penny.vincenttunru.com/">Penny</a></li>
+                <li class="fragment"><a href="https://noeldemartin.github.io/media-kraken/">Media Kraken</a></li>
+                <li class="fragment"><a href="https://liqid.chat/">Liqid Chat</a></li>
+                <li class="fragment"><a href="https://formgenerator.smessie.com/">Form Generator</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section id="thank-you">
+          <h2>Questions?</h2>
+          <p>Thank you ^_^</p>
+        </section>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

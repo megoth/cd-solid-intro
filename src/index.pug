@@ -1,0 +1,157 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Introduction to Solid - Cappelen Damm utviklingsgruppe, 22. september 2022
+
+    meta(name="description" content="A presentation of Solid, presented at Cappelen Damm utviklingsgruppe, September 22, 2022")
+    meta(name="author" content="Arne Hassel")
+
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+
+    meta(name="viewport" content="width=device-width,"
+                                +"initial-scale=1.0,"
+                                +"maximum-scale=1.0,"
+                                +"user-scalable=no")
+
+    link(rel="stylesheet" href="./index.css")
+  body
+    .reveal
+      .slides
+        section#start
+          h1 Introduction to Solid
+          p By Arne Hassel
+        section#agenda
+          h2 Agenda
+        section#about-me
+          h2 About me
+          ul
+            li.fragment
+              a(href="https://inrupt.com/") Inrupt
+            li.fragment
+              a(href="https://solidproject.org/") Solid
+            li.fragment
+              a(href="https://www.w3.org/standards/semanticweb/data") Linked Data
+        section#solid-10000-ft
+          h2 Solid from 10.000 ft
+          blockquote
+            | Solid is a&nbsp;
+            a(href="https://solidproject.org/TR/") specification
+            |  that lets people store their data securely in decentralized data stores called Pods.
+            | Pods are like secure personal web servers for data. When data is stored in someone's Pod,
+            | they control which people and applications can access it.
+          ul
+            li.fragment several "sub"-specifications
+            li.fragment Started by&nbsp;
+              a(href="https://en.wikipedia.org/wiki/Tim_Berners-Lee") Tim Berners-Lee
+            li.fragment Social Linked Data - SoLiD (not used anymore)
+        section#solid-org
+          h2 Organization
+          ul
+            li.fragment No single organization
+            li.fragment Panels (e.g.&nbsp;
+              a(href="https://www.w3.org/community/solid/wiki/Authentication_Panel") authentication
+              | ,&nbsp;
+              a(href="https://www.w3.org/community/solid/wiki/Authorization_Panel") authorization
+              | ,&nbsp;
+              a(href="https://www.w3.org/community/solid/wiki/Interoperability_Panel") interoperability
+              | )
+            li.fragment Other&nbsp;
+              a(href="https://solidproject.org/contributing") volunteers
+            li.fragment Utviklere og organisasjoner
+            li.fragment Andre interesserte
+        section#solid-not
+          h2 What Solid isn't
+          ul
+            li.fragment Blockchain
+            li.fragment SOLID principles
+            li.fragment solid.js
+        section#solid-basic-rdf
+          h2 Solid basics
+          ul
+            li.fragment RDF (
+              a(href="https://www.w3.org/TR/rdf11-concepts/") Specification
+              | ,&nbsp;
+              a(href="https://www.w3.org/TR/rdf-primer/") Primer
+              | )
+            li.fragment Triples
+              img(src="./assets/rdf-graph.svg", style="margin: 0 1em;")
+            li.fragment Graphs (e.g.&nbsp;
+              a(href="https://id.inrupt.com/megoth") https://id.inrupt.com/megoth
+              | )
+            li.fragment Vocabularies/Ontologies (e.g.&nbsp;
+              a(href="https://schema.org/") schema.org
+              | )
+            li.fragment Queries (i.e.&nbsp;
+              a(href="https://www.w3.org/TR/rdf-sparql-query/") SPARQL
+              | )
+            li.fragment Shapes (
+              a(href="http://shex.io/") ShEx
+              | ,&nbsp;
+              a(href="https://www.w3.org/TR/shacl/") SHACL
+              | ,&nbsp;
+              a(href="https://shaperepo.com/") ShapeRepo
+              | )
+        section#solid-implementations
+          h2 Solid implementations
+          ul
+            li.fragment Server implementations (
+              a(href="https://inrupt.com/products/enterprise-solid-server/") ESS
+              | ,&nbsp;
+              a(href="https://github.com/CommunitySolidServer/CommunitySolidServer") CSS
+              | ,&nbsp;
+              a(href="https://github.com/nodeSolidServer/node-solid-server") NSS
+              | )
+            li.fragment Client-side implementations (
+              a(href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/") Inrupt
+              | ,&nbsp;
+              a(href="https://github.com/linkeddata/rdflib.js/") rdflib.js
+              | ,&nbsp;
+              a(href="https://www.npmjs.com/package/ldo") LDO
+              | )
+            li.fragment
+              a(href="https://solidproject.org/developers/tools/") List of tools
+        section#pros-cons-developers
+          h2 Pros & Cons - Developers
+          ul(style="list-style: none;")
+            li.fragment + Reusable and extensible data
+            li.fragment + GDPR-compliant
+            li.fragment + Good combo w/headless apps
+            li.fragment - Complicated
+            li.fragment - Specifications under development
+            li.fragment - No significant network effect (yet)
+        section#pros-cons-users
+          h2 Pros & Cons - Users
+          ul(style="list-style: none;")
+            li.fragment + No lock-in
+            li.fragment + Reusable data
+            li.fragment + Allows full control of data
+            li.fragment - Few apps
+            li.fragment - Challenging UX
+        section#links
+          h2 More links
+          ul
+            li.fragment
+              a(href="https://forum.solidproject.org/") Forum
+            li.fragment
+              a(href="https://gitter.im/solid/chat") Gitter chat
+            li.fragment
+              a(href="https://solidproject.org/events") Solid World
+            li.fragment
+              a(href="https://solidproject.org/apps") Apps
+              ul
+                li.fragment
+                  a(href="https://podbrowser.inrupt.com") Inrupt PodBrowser
+                li.fragment
+                  a(href="https://penny.vincenttunru.com/") Penny
+                li.fragment
+                  a(href="https://noeldemartin.github.io/media-kraken/") Media Kraken
+                li.fragment
+                  a(href="https://liqid.chat/") Liqid Chat
+                li.fragment
+                  a(href="https://formgenerator.smessie.com/") Form Generator
+        section#thank-you
+          h2 Questions?
+          p Thank you ^_^
+    script(src="./index.js")

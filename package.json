@@ -1,0 +1,27 @@
+{
+  "name": "cd-solid-intro",
+  "version": "1.0.0",
+  "description": "A presentation that introduces Solid to the development group at Cappelen Damm",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:html",
+    "build:css": "sass src/css/reveal.scss ./index.css",
+    "build:html": "rm -f ./index.html && pug src/index.pug -P -o ./",
+    "build:js": "webpack --config webpack.config.js",
+    "start": "live-server",
+    "watch:html": "pug src/index.pug -wP -o ./",
+    "watch:js": "webpack -w --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arne Hassel <arne.hassel@gmail.com> (http://icanhasweb.net/)",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "reveal": "0.0.4",
+    "sass": "^1.54.9",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
